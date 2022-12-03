@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: raleway;
+  text-decoration: none;
+  color: black;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 4.8em;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+h4,
+h5 {
+  font-size: 2, 8em;
+}
+
+li {
+  font-size: 2em;
+}
+
+
+/* header  */
+
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav img {
+  flex: 1 1 1;
+  color: #0065FC;
+  align-items: center;
+}
