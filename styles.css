@@ -1,54 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: raleway;
-  text-decoration: none;
+  list-style-type: none;
+}
+
+li,
+a {
+  font-family: raleway, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
   color: black;
-
+  text-decoration: none;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-h1 {
-  font-size: 2.6em;
-}
-
-h2 {
-  font-size: 4.8em;
-}
-
-h3 {
-  font-size: 3em;
-}
-
-h4,
-h5 {
-  font-size: 2, 8em;
-}
-
-li {
-  font-size: 2em;
-}
-
-
-/* header  */
-
-
-nav {
-  min-height: 10vh;
+header {
+  /* border a supprimer en finition du projet */
+  border: solid orange;
   display: flex;
-  width: 90%;
-  margin: auto;
-  padding: 2rem;
-}
-
-nav ul {
-  display: flex;
-  flex: 1 1 40rem;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  /* border a supprimer en finition */
+  border: solid green;
+  cursor: pointer;
+  margin-right: 65%;
+  height: 30px;
+}
+
+.nav__links {
   list-style: none;
+  display: flex;
+  /* border solid en red a supprimer pour trouver le pblm */
+  border: solid red;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
 }
