@@ -29,8 +29,8 @@ header {
   /* border a supprimer en finition */
   border: solid green;
   cursor: pointer;
-  margin-right: 65%;
-  height: 30px;
+  margin-right: 70%;
+  height: 25px;
 }
 
 .nav__links {
