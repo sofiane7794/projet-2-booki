@@ -1,54 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-* {
+ * {  
   font-family: raleway, sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  /* "l'*" signifie tout (ici tout le contenu sera en police raleway et si ça ne marche pas eh bien la police passera en sans serif ici */
 }
 
-li,
-a {
-  font-weight: 500;
-  font-size: 16px;
-  color: black;
-  text-decoration: none;
+body {
+  margin: 35px;
 }
 
 header {
-  /* border a supprimer en finition du projet */
-  border: solid orange;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  font-size: 1.3em;
   align-items: center;
-  padding: 30px 10%;
 }
 
-.logo {
-  /* border a supprimer en finition */
-  border: solid green;
-  cursor: pointer;
-  margin-right: 70%;
-  height: 25px;
+header img {
+  width: 80px;
 }
 
-.nav__links {
+nav ul {
   list-style: none;
+  /* list-styles "none sert a enlever les points a gauche des mot pour mes ol ou ul (ordered list / unordored list */
   display: flex;
-  /* border solid en red a supprimer pour trouver le pblm */
-  border: solid red;
+  /* display flex sert a mettre de element l'un a cote de l'autre et non l'un au dessus de l'autre */
 }
 
-.nav__links li {
-  display: inline-block;
-  padding: 0px 20px;
+nav li {
+  margin-right: 30px;
 }
 
-.nav__links li a {
-  transition: all 0.3s ease 0s;
+a {
+  text-decoration: none;
+  /* j'ai reussis a enlever les ligne en dessous des mots voir la video de fromscratch */
 }
 
-.nav__links li a:hover {
-  color: #0088a9;
+nav a {
+  color: #000000;
+  /* mon texte est en noir mais des que je passe la souris par dessus le mot passe en bleu grace au hover */
 }
+
+nav a:hover {
+  padding-top: 53px;
+  transition: 0.1s;
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+}
+/* j'ai fini la navbar */
