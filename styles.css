@@ -5,6 +5,10 @@
   /* "l'*" signifie tout (ici tout le contenu sera en police raleway et si ça ne marche pas eh bien la police passera en sans serif ici */
 }
 
+
+/* header */
+
+
 body {
   margin: 35px;
 }
@@ -19,7 +23,7 @@ header {
 header img {
   width: 80px;
 }
-
+/* barre nav */
 nav ul {
   list-style: none;
   /* list-styles "none sert a enlever les points a gauche des mot pour mes ol ou ul (ordered list / unordored list */
@@ -40,7 +44,7 @@ nav a {
   color: #000000;
   /* mon texte est en noir mais des que je passe la souris par dessus le mot passe en bleu grace au hover */
 }
-
+/* effet visuel au dessus de hebergement et logement */
 nav a:hover {
   padding-top: 53px;
   transition: 0.1s;
@@ -48,3 +52,16 @@ nav a:hover {
   border-top: 3px solid #0065fc;
 }
 /* j'ai fini la navbar */
+
+
+/* section que j'ai appele research */
+
+h1 {
+  padding-top: 10px;
+  font-size: 1.4em;
+}
+
+#slogan {
+  margin-top: -10px;
+}
+
