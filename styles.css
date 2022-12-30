@@ -12,6 +12,10 @@ body {
   font-size: 16px;
 }
 
+main {
+  /* a ne pas oublier de supprimer les border a la fin  */
+  border: rebeccapurple solid;
+}
 
 /* *****************HEADER *****************************/
 
@@ -21,6 +25,8 @@ header {
   justify-content: space-between;
   font-size: 1.3em;
   align-items: center;
+  /* ne pas oublier de suprimer les border */
+  border: red solid;
 }
 
 header img {
@@ -149,7 +155,7 @@ nav a:hover {
 }
 
 .blue-icon {
-    /* la seul facçon que j'ai trouver pour mettre tout les logo au centre */
+  /* la seul facçon que j'ai trouver pour mettre tout les logo au centre */
   line-height: 3;
   color: #0065fc;
   background-color: #DEEBFF;
@@ -180,4 +186,89 @@ nav a:hover {
   margin-left: 15px;
 }
 
-/* fin du css de la premiere partie place au media queries */
+/* fin du css de la premiere partie place au media queries je demanderai au mentor ce samedi */
+
+/* hebergement à marseille */
+
+#hebergement {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin bottom = marge inférieure de l'element */
+  margin-bottom: 500px;
+}
+
+.title_hebergements13 {
+  margin: 0px;
+  font-size: large bold;
+  margin-bottom: 20px;
+
+}
+
+#hebergements13 {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  border-radius: 20px;
+  padding: 44px 36px 44px 36px;
+  max-width: 805px;
+}
+
+.container_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-bottom: 60px;
+}
+
+.box_carte {
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 5px 5px 10px 5px;
+  background-color: white;
+  max-width: 236px;
+  margin-bottom: 28px;
+}
+
+.photo_hebergement {
+  object-fit: cover;
+  width: 236px;
+  height: 112px;
+  /* j'ai arrondi les coin superieur droit et gauche sans toucher les coins inferieur (sinon j'aurai utiliser border radius si je me rappel bien */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.hebergement_contenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 16px;
+}
+
+.titre_contenu {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.prix_contenu {
+  padding-bottom: 11px;
+}
+
+.hebergement_notation {
+  padding-bottom: 11px;
+}
+
+.hebergement_contenu h3 {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.fas.fa-star.grey_star {
+  color: gray;
+}
