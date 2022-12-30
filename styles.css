@@ -2,16 +2,19 @@
 
 * {
   font-family: raleway, sans-serif;
+  font-weight: bold;
   /* "l'*" signifie tout (ici tout le contenu sera en police raleway et si ça ne marche pas eh bien la police passera en sans serif ici */
+}
+
+body {
+  margin: 35px;
+  color: #000000;
+  font-size: 16px;
 }
 
 
 /* *****************HEADER *****************************/
 
-
-body {
-  margin: 35px;
-}
 
 header {
   display: flex;
@@ -23,6 +26,7 @@ header {
 header img {
   width: 80px;
 }
+
 /* barre nav */
 nav ul {
   list-style: none;
@@ -44,6 +48,7 @@ nav a {
   color: #000000;
   /* mon texte est en noir mais des que je passe la souris par dessus le mot passe en bleu grace au hover */
 }
+
 /* effet visuel au dessus de hebergement et logement */
 nav a:hover {
   padding-top: 53px;
@@ -51,19 +56,128 @@ nav a:hover {
   color: #0065fc;
   border-top: 3px solid #0065fc;
 }
+
 /* j'ai fini la navbar */
 
 /* ********************** MAIN ***************************** */
 
+/* section research */
 
-/* section que j'ai appele research */
-
-h1 {
-  padding-top: 10px;
-  font-size: 1.4em;
+.search h1 {
+  font-size: 22px;
 }
 
-#slogan {
-  margin-top: -10px;
+/* ici on parle de la barre de recherche en general */
+.formula {
+  display: flex;
+  margin-top: 20px;
+  height: 45px;
 }
 
+.fa-map-marker-alt {
+  width: 45px;
+  color: #000000;
+  background-color: #F2F2F2;
+  border: 3px #F2F2F2 solid;
+  padding: 10px;
+  border-radius: 12px 0px 0px 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.destination {
+  border: 2px #F2F2F2 solid;
+  font-size: 18px;
+  font-weight: bold;
+  width: 240px;
+  text-indent: 10px;
+}
+
+.search-French {
+  border-radius: 0 13px 13px 0;
+  background: #0065fc;
+  color: #ffff;
+  border-style: none;
+  font-weight: bold;
+  width: 130px;
+  font-size: 18px;
+}
+
+.search-button {
+  display: none;
+}
+
+/* section filter */
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 30px 0px;
+  gap: 25px;
+}
+
+.filter h2 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.filter ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+
+.filter li {
+  display: flex;
+  align-items: center;
+  border: 2px solid #d9d9d9;
+  border-radius: 100px;
+  border-left: #DEEBFF;
+}
+
+.filter a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  padding: 0px 12px;
+}
+
+/* passage de souris sur les li donc changement de couleur */
+.filter li:hover {
+  background-color: #DEEBFF;
+}
+
+.blue-icon {
+    /* la seul facçon que j'ai trouver pour mettre tout les logo au centre */
+  line-height: 3;
+  color: #0065fc;
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+
+/* Info */
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.fa-info {
+  width: 15px;
+  height: 15px;
+  color: #0065fc;
+  border-radius: 100%;
+  border: 1px solid #d9d9d9;
+  padding: 5px 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.info p {
+  margin-left: 15px;
+}
+
+/* fin du css de la premiere partie place au media queries */
