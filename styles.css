@@ -4,14 +4,15 @@
   font-family: raleway, sans-serif;
   font-weight: bold;
   /* "l'*" signifie tout (ici tout le contenu sera en police raleway et si ça ne marche pas eh bien la police passera en sans serif ici */
-  box-sizing: border-box;
+  box-sizing: Border-box;
 }
 
-
 body {
-  margin: 35px;
+  margin: 0;
   color: #000000;
   font-size: 16px;
+  max-width: 1400px;
+  margin: auto
 }
 
 main {
@@ -28,7 +29,8 @@ header {
   font-size: 1.3em;
   align-items: center;
   /* ne pas oublier de suprimer les border */
-  border: red solid;
+  /* border: red solid; */
+  height: 94px;
 }
 
 header img {
@@ -36,15 +38,27 @@ header img {
 }
 
 /* barre nav */
+nav{
+  height:100%;
+  width: 30%;
+}
+
 nav ul {
   list-style: none;
   /* list-styles "none sert a enlever les points a gauche des mot pour mes ol ou ul (ordered list / unordored list */
   display: flex;
   /* display flex sert a mettre de element l'un a cote de l'autre et non l'un au dessus de l'autre */
+  margin: 0;
+  height: 100%;
+  align-items: center;
 }
 
 nav li {
-  margin-right: 30px;
+  /* padding-right: 30px; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 a {
@@ -55,13 +69,19 @@ a {
 nav a {
   color: #000000;
   /* mon texte est en noir mais des que je passe la souris par dessus le mot passe en bleu grace au hover */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 3px solid blue;
+  justify-content: center;
+  width: 100%;
 }
 
 /* effet visuel au dessus de hebergement et logement */
 nav a:hover {
-  padding-top: 53px;
+  /*padding-top: 53px;
   transition: 0.1s;
-  color: #0065fc;
+  color: #0065fc;*/
   border-top: 3px solid #0065fc;
 }
 
