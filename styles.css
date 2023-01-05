@@ -4,7 +4,9 @@
   font-family: raleway, sans-serif;
   font-weight: bold;
   /* "l'*" signifie tout (ici tout le contenu sera en police raleway et si ça ne marche pas eh bien la police passera en sans serif ici */
+  box-sizing: border-box;
 }
+
 
 body {
   margin: 35px;
