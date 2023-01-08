@@ -17,7 +17,7 @@ body {
 
 main {
   /* a ne pas oublier de supprimer les border a la fin  */
-  border: rebeccapurple solid;
+  /*border: rebeccapurple solid;*/
 }
 
 /* *****************HEADER *****************************/
@@ -40,7 +40,8 @@ header img {
 /* barre nav */
 nav{
   height:100%;
-  width: 30%;
+  /*width: 30%;*/
+  width: 350px;
 }
 
 nav ul {
@@ -72,7 +73,7 @@ nav a {
   height: 100%;
   display: flex;
   align-items: center;
-  border-top: 3px solid blue;
+  /*border-top: 3px solid blue;*/
   justify-content: center;
   width: 100%;
 }
@@ -85,8 +86,46 @@ nav a:hover {
   border-top: 3px solid #0065fc;
 }
 
+
+
 /* j'ai fini la navbar */
 
+
+@media screen and (max-width: 768px) {
+
+  header{
+    flex-direction: column;
+    height:146px;
+
+  }
+
+  nav{
+    height: 50%;
+    width:100%;
+  }
+
+  nav ul {
+    padding:0;
+}
+  
+  
+  .bloc-logo {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+
+  nav a:hover {
+    /*padding-top: 53px;
+    transition: 0.1s;
+    color: #0065fc;*/
+    border-top:0;
+    border-bottom: 3px solid #0065fc;
+  }
+  
+}
 /* ********************** MAIN ***************************** */
 
 /* section research */
