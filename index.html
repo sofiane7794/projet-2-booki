@@ -74,7 +74,7 @@
                 alt="photo hebergement">
               <div class="hebergment_contenu">
                 <div class="titre_contenu">
-                  <h3> Auberge la Cannrbière</h3>
+                  <h3> Auberge la Cannebière</h3>
                 </div>
                 <div class="prix_contenu">
                   <!-- la balise doit faire resortir le 25€ sur le navigateur -->
@@ -111,7 +111,6 @@
                 </div>
               </div>
             </div>
-          </a>
           </a>
           <a href="#">
             <div class="box_carte">
@@ -195,12 +194,14 @@
             </div>
           </a>
         </div>
-        <div class="hebergement_montrer_plus">Afficher plus</div>
+        <div>
+          <a class="link_show_more" href="#">Afficher plus</a>
+        </div>
       </div>
 
       <!-- les plus populaire -->
 
-      
+
       <aside id="populaires">
         <div id="pop_header">
           <h2 class="section-header b-header">Les plus populaires</h2>
@@ -209,11 +210,8 @@
         <div id="pop-cards-section">
           <div class="pop-card">
             <a href="#">
-              <img
-                class="pop-hotel-picture"
-                src="./image/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                alt="Hôtel Le Soleil du matin"
-              />
+              <img class="pop-hotel-picture" src="./image/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel Le Soleil du matin" />
               <div class="pop-card-text">
                 <div>
                   <p class="hotel-name">Hôtel Le Soleil du matin</p>
@@ -231,11 +229,8 @@
           </div>
           <div class="pop-card">
             <a href="#">
-              <img
-                class="pop-hotel-picture"
-                src="./image/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                alt="Hôtel Le Soleil du matin"
-              />
+              <img class="pop-hotel-picture" src="./image/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                alt="Hôtel Le Soleil du matin" />
               <div class="pop-card-text">
                 <div>
                   <p class="hotel-name">Au coeur de l'eau Chambres d'hôtes</p>
@@ -253,11 +248,8 @@
           </div>
           <div class="pop-card">
             <a href="#">
-              <img
-                class="pop-hotel-picture"
-                src="./image/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                alt="Hôtel Tout bleu et blanc"
-              />
+              <img class="pop-hotel-picture" src="./image/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                alt="Hôtel Tout bleu et blanc" />
               <div class="pop-card-text">
                 <div>
                   <p class="hotel-name">Hôtel Tout bleu et blanc</p>
@@ -278,13 +270,71 @@
 
     </section>
 
+    <!-- activite a marseille -->
+
+    <section id="activities">
+      <h2 class="section-header b-header">Activités à Marseille</h2>
+      <div id="activity-cards">
+
+
+        <div class="tall-card a_card">
+          <img class="tall_img" src="./image/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            alt="Vieux Port de Marseille" />
+          <h3 class="activity-name">Vieux Port</h3>
+        </div>
+
+        <div class="tall-card a_card">
+          <img class="tall_img" src="./image/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+            alt="Vieux Port de Marseille" />
+          <h3 class="activity-name">Fort De Pornégues</h3>
+        </div>
+
+        <div class="tall-card a_card">
+          <img class="tall_img" src="./image/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+            alt="Parc National des Calanques" />
+          <h3 class="activity-name">Parc National des Calanques</h3>
+        </div>
+
+        <div class="tall-card a_card">
+          <img class="tall_img" src="./image/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+            alt="Vieux Port de Marseille" />
+          <h3 class="activity-name">Notre-Dames-De-La-Garde</h3>
+        </div>
+
+
+      </div>
+    </section>
+
   </main>
 
   <!-- MAIN -->
 
   <!-- FOOTER -->
   <footer>
+    <section class="footer-s">
+      <h3 class="f-header m-header">A propos</h3>
+      <div class="links">
+        <p><a href="#">Fonctionnement du site</a></p>
+        <p><a href="#">Conditions générales de vente</a></p>
+        <p><a href="#">Données et confidentialité</a></p>
+      </div>
+    </section>
 
+    <section class="footer-s">
+      <h3 class="f-header m-header">Nos hébergements</h3>
+      <div class="links">
+        <p><a href="#">Charte qualité</a></p>
+        <p><a href="#">Soumettre votre hôtel</a></p>
+      </div>
+    </section>
+
+    <section class="footer-s">
+      <h3 class="f-header m-header">Assistance</h3>
+      <div class="links">
+        <p><a href="#">Centre d'aide</a></p>
+        <p><a href="#">Nous contacter</a></p>
+      </div>
+    </section>
   </footer>
   <!-- FOOTER -->
 </body>

@@ -3,6 +3,7 @@
 * {
   font-family: raleway, sans-serif;
   font-weight: bold;
+  color: #000000;
   /* "l'*" signifie tout (ici tout le contenu sera en police raleway et si ça ne marche pas eh bien la police passera en sans serif ici */
   /*box-sizing: Border-box;*/
 }
@@ -12,7 +13,6 @@ body {
   color: #000000;
   font-size: 16px;
   max-width: 1400px;
-  padding:28px;
 }
 
 
@@ -173,7 +173,7 @@ nav a:hover {
   display: none;
 }
 
-@media all and (max-width : 425px) {
+@media all and (max-width : 768px) {
   header {
     position: relative;
     margin-bottom: 50px;
@@ -254,6 +254,7 @@ nav a:hover {
 .info {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .fa-info {
@@ -281,7 +282,7 @@ nav a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   /* margin bottom = marge inférieure de l'element */
-  margin-bottom: 500px;
+  margin-bottom: 60px;
 }
 
 .title_hebergements13 {
@@ -298,7 +299,7 @@ nav a:hover {
   justify-content: space-between;
   align-content: space-between;
   border-radius: 20px;
-  padding: 44px 36px 44px 36px;
+  padding: 5px 36px;
   max-width: 805px;
 }
 
@@ -337,12 +338,12 @@ nav a:hover {
 }
 
 .titre_contenu {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: px;
+  padding-bottom: px;
 }
 
 .prix_contenu {
-  padding-bottom: 11px;
+  color: #000000;
 }
 
 .hebergement_notation {
@@ -352,6 +353,7 @@ nav a:hover {
 .hebergement_contenu h3 {
   font-weight: bold;
   font-style: normal;
+  color: #000000;
 }
 
 .fas.fa-star.grey_star {
@@ -362,6 +364,12 @@ nav a:hover {
   color: #0065fc;
 }
 
+.link_show_more {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
 
 /* les plus populaires */
 
@@ -372,7 +380,6 @@ nav a:hover {
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 #pop_header {
@@ -388,7 +395,7 @@ nav a:hover {
 }
 
 #pop-cards-section {
-  height: 85%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -400,7 +407,7 @@ nav a:hover {
   background-color: #ffff;
   border-radius: 20px;
   padding: 5px;
-  margin: 10px -5px;
+  margin: 25px -5px;
   box-shadow: #d5d4d4 0px 5px 10px;
 }
 
@@ -416,7 +423,7 @@ nav a:hover {
 
 .pop-hotel-picture {
   width: 40%;
-  height: 135px;
+  height: 145px;
   object-fit: cover;
   border-radius: 20px 0 0 20px;
   margin-right: 10px;
@@ -433,4 +440,89 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* activite a marseille */
+
+#activities {
+  width: 100%;
+  background-color: #ffff;
+  padding: 30px 0;
+}
+
+
+#activity-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tall-card {
+  width: 22%;
+  height: 360px;
+}
+
+.tall-card:hover {
+  box-shadow: gray 0px 5px 10px;
+}
+
+.a_card {
+  background-color: #ffff;
+  border-radius: 20px;
+  box-shadow: #f2f2f2 0px 5px 10px;
+}
+
+.a_card:hover {
+  box-shadow: gray 0px 5px 10px;
+  cursor: pointer;
+}
+
+.tall_img {
+  width: 100%;
+  height: 293px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.activity-name {
+  font-weight: 600;
+  font-size: 17px;
+  padding: 10px;
+  justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  display: flex;
+  height: 220px;
+}
+
+.footer-s {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  margin: 10px;
+}
+
+
+
+.links {
+  height: 100px;
+}
+
+
+.footer-s a {
+  font-size: 12px;
+  word-spacing: 2px;
+  color: black;
+  text-decoration: none;
+
+}
+
+.links a:hover {
+  font-size: 15px;
+  text-decoration: underline;
 }
