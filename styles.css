@@ -286,9 +286,9 @@ nav a:hover {
 }
 
 .title_hebergements13 {
-  margin: 0px;
-  font-size: large bold;
-  margin-bottom: 20px;
+  font-size: bold;
+  margin-bottom: 10px;
+  padding: 20px 0;
 
 }
 
@@ -337,10 +337,6 @@ nav a:hover {
   padding-left: 16px;
 }
 
-.titre_contenu {
-  padding-top: px;
-  padding-bottom: px;
-}
 
 .prix_contenu {
   color: #000000;
@@ -392,6 +388,7 @@ nav a:hover {
 
 #pop_icon {
   font-size: 22px;
+  color: #0065FC;
 }
 
 #pop-cards-section {
