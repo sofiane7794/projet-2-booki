@@ -5,7 +5,7 @@
   font-weight: bold;
   color: #000000;
   /* "l'*" signifie tout (ici tout le contenu sera en police raleway et si ça ne marche pas eh bien la police passera en sans serif ici */
-  /*box-sizing: Border-box;*/
+  box-sizing: Border-box;
 }
 
 body {
@@ -13,6 +13,8 @@ body {
   color: #000000;
   font-size: 16px;
   max-width: 1400px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 
@@ -85,44 +87,7 @@ nav a:hover {
 
 
 
-/* j'ai fini la navbar */
 
-
-@media screen and (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-    height: 146px;
-
-  }
-
-  nav {
-    height: 50%;
-    width: 100%;
-  }
-
-  nav ul {
-    padding: 0;
-  }
-
-
-  .bloc-logo {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  nav a:hover {
-    /*padding-top: 53px;
-    transition: 0.1s;
-    color: #0065fc;*/
-    border-top: 0;
-    border-bottom: 3px solid #0065fc;
-  }
-
-}
 
 
 /* ********************** MAIN ***************************** */
@@ -173,36 +138,13 @@ nav a:hover {
   display: none;
 }
 
-@media all and (max-width : 768px) {
-  header {
-    position: relative;
-    margin-bottom: 50px;
-  }
 
-  .search-French {
-    display: none;
-  }
-
-  .rechercher_loupe {
-    display: block;
-    width: 40px;
-    background-color: #0065FC;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 0 1rem 1rem 0;
-  }
-
-  .rechercher_loupe .fas {
-    color: white;
-  }
-}
 
 /* section filter */
 
 .filter {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   align-items: center;
   margin: 30px 0px;
   gap: 25px;
@@ -217,7 +159,10 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 17px;
+  padding-left:0;
 }
+
+
 
 .filter li {
   display: flex;
@@ -271,6 +216,12 @@ nav a:hover {
 .info p {
   margin-left: 15px;
 }
+
+
+
+
+
+
 
 /* fin du css de la premiere partie place au media queries je demanderai au mentor ce samedi */
 
@@ -522,4 +473,83 @@ footer {
 .links a:hover {
   font-size: 15px;
   text-decoration: underline;
+}
+
+
+
+
+
+
+@media all and (max-width : 768px) {
+  /*HEADER*/
+
+  header {
+    flex-direction: column;
+    height: 146px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  /*NAV*/
+
+  nav {
+    height: 50%;
+    width: 100%;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  
+  .bloc-logo {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav a:hover {
+    /*padding-top: 53px;
+    transition: 0.1s;
+    color: #0065fc;*/
+    border-top: 0;
+    border-bottom: 3px solid #0065fc;
+  }
+
+
+
+
+
+  /*search*/
+
+  .search-French {
+    display: none;
+  }
+
+  .rechercher_loupe {
+    display: block;
+    width: 40px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  .rechercher_loupe .fas {
+    color: white;
+  }
+
+  /*FILTER*/
+  .filter{
+    gap:0;
+    flex-wrap: wrap;
+  }
+ 
+
+  .filter ul li{
+    width:47%;
+  }
 }
