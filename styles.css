@@ -8,10 +8,11 @@
 }
 
 body {
-  margin: 50px;
+  margin: auto;
   color: #000000;
   font-size: 16px;
   max-width: 1400px;
+  padding:28px;
 }
 
 
@@ -274,7 +275,7 @@ nav a:hover {
 
 /* hebergement à marseille */
 
-#hebergement {
+#hebergements {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -359,4 +360,77 @@ nav a:hover {
 
 .fas.fa-star {
   color: #0065fc;
+}
+
+
+/* les plus populaires */
+
+#populaires {
+  width: 30%;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#pop_header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+#pop_icon {
+  font-size: 22px;
+}
+
+#pop-cards-section {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pop-card {
+  width: 100%;
+  height: 145px;
+  background-color: #ffff;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px -5px;
+  box-shadow: #d5d4d4 0px 5px 10px;
+}
+
+.pop-card:hover {
+  box-shadow: gray 0px 5px 10px;
+}
+
+.pop-card a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}
+
+.pop-hotel-picture {
+  width: 40%;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  margin-right: 10px;
+}
+
+.pop-stars {
+  font-size: 11px;
+  color: #0065fc;
+}
+
+.pop-card-text {
+  width: 60%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
