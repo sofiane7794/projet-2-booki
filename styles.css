@@ -2,10 +2,11 @@
 
 * {
   font-family: raleway, sans-serif;
-  font-weight: bold;
+  /*font-weight: bold;*/
   color: #000000;
   /* "l'*" signifie tout (ici tout le contenu sera en police raleway et si ça ne marche pas eh bien la police passera en sans serif ici */
   box-sizing: Border-box;
+  font-size: 14px;
 }
 
 body {
@@ -13,8 +14,17 @@ body {
   color: #000000;
   font-size: 16px;
   max-width: 1400px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+h1,
+h2 {
+  font-size: 22px;
 }
 
 
@@ -26,19 +36,16 @@ header {
   justify-content: space-between;
   font-size: 1.3em;
   align-items: center;
-  /* ne pas oublier de suprimer les border */
-  /* border: red solid; */
   height: 94px;
 }
 
 header img {
-  width: 80px;
+  width: 30%;
 }
 
 /* barre nav */
 nav {
   height: 100%;
-  /*width: 30%;*/
   width: 350px;
 }
 
@@ -53,7 +60,6 @@ nav ul {
 }
 
 nav li {
-  /* padding-right: 30px; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -62,33 +68,23 @@ nav li {
 
 a {
   text-decoration: none;
-  /* j'ai reussis a enlever les ligne en dessous des mots voir la video de fromscratch */
 }
 
 nav a {
   color: #000000;
-  /* mon texte est en noir mais des que je passe la souris par dessus le mot passe en bleu grace au hover */
   height: 100%;
   display: flex;
   align-items: center;
-  /*border-top: 3px solid blue;*/
   justify-content: center;
   width: 100%;
 }
 
 /* effet visuel au dessus de hebergement et logement */
+
 nav a:hover {
-  /*padding-top: 53px;
-  transition: 0.1s;
-  color: #0065fc;*/
   border-top: 3px solid #0065fc;
   color: #0065FC;
 }
-
-
-
-
-
 
 /* ********************** MAIN ***************************** */
 
@@ -144,7 +140,6 @@ nav a:hover {
 
 .filter {
   display: flex;
-  /*flex-wrap: wrap;*/
   align-items: center;
   margin: 30px 0px;
   gap: 25px;
@@ -185,7 +180,6 @@ nav a:hover {
 }
 
 .blue-icon {
-  /* la seul facçon que j'ai trouver pour mettre tout les logo au centre */
   line-height: 3;
   color: #0065fc;
   background-color: #DEEBFF;
@@ -232,6 +226,7 @@ nav a:hover {
   margin-right: 20px;
   flex: 66%;
   height: 100%;
+  padding: 30px;
 }
 
 .conteneur-card-populaires {
@@ -241,8 +236,9 @@ nav a:hover {
 }
 
 /*HEBERGEMENTS - Titres*/
+
 .titre-hebergements {
-  margin: 49px 30PX 20px 30px;
+  margin: 18px 16PX 20px 7px;
 }
 
 #titre-et-icone {
@@ -253,7 +249,8 @@ nav a:hover {
 }
 
 #afficher-plus {
-  margin: 10px 0px 78px 34px;
+  padding: 0px 0px 0 11px;
+  margin: 0;
 }
 
 #conteneur-hebergements {
@@ -262,9 +259,12 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
+#conteneur-hebergements a {
+  width: 33%;
+}
+
 /*Cards Hébergements*/
 .hebergements-item {
-  width: 230px;
   height: 200px;
   border-radius: 20px;
   margin-bottom: 21%;
@@ -275,19 +275,24 @@ nav a:hover {
 
 #conteneur-hebergements a {
   padding: 0PX 5PX;
-  /*Utile pour le responsive*/
+}
+
+.hebergements-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 /*Cards Populaires*/
 .populaires-item {
   width: 84%;
-  height: 156px;
+  height: 147px;
   border-radius: 20px;
   margin: 0px 30px 38px 30px;
   background-color: white;
   padding: 5px;
   display: flex;
-  /* padding-right: 10%; */
   align-items: inherit;
   box-shadow: 0px 0px 15px #0000002e;
 }
@@ -309,8 +314,8 @@ nav a:hover {
 .hotel-name,
 .hotel-price,
 .stars {
-  padding-left: 5%;
-  font-size: 69%;
+  padding-left: 1%;
+  margin: 0;
 }
 
 .stars {
@@ -321,6 +326,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 5px;
 }
 
 .fa-solid.fa-star.blue {
@@ -357,7 +363,7 @@ nav a:hover {
 
 .tall-card {
   width: 22%;
-  height: 360px;
+  height: 433px;
 }
 
 .tall-card:hover {
@@ -377,7 +383,7 @@ nav a:hover {
 
 .tall_img {
   width: 100%;
-  height: 293px;
+  height: 381px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
@@ -386,7 +392,7 @@ nav a:hover {
   font-weight: 600;
   font-size: 17px;
   padding: 10px;
-  justify-content: center;
+  margin: 0;
 }
 
 /* FOOTER */
@@ -449,7 +455,6 @@ footer {
   }
 
   .conteneur-card-hebergements {
-    /* background-color: transparent; */
     background-color: #F2F2F2;
     border-radius: 20px;
     margin: 0%;
@@ -458,9 +463,6 @@ footer {
     height: 100%;
   }
 
-  #afficher-plus {
-    margin: 10px 0px 31px 34px;
-  }
 
   #titre-et-icone {
     display: flex;
@@ -476,15 +478,12 @@ footer {
 
   #section-hebergements a {
     width: 33%;
-    /*La card prend 50% de la largeur*/
-    padding: 0PX 20px;
   }
 
   .populaires-item {
-    width: 100%;
+    width: 88%;
     height: 160px;
-    margin: 0px 0px 45px 3px;
-    /* margin: 0% 1% 5% 1%; */
+    margin: 0px 25px 37px 25px;
   }
 
   .hebergements-item {
@@ -531,9 +530,6 @@ footer {
   }
 
   nav a:hover {
-    /*padding-top: 53px;
-    transition: 0.1s;
-    color: #0065fc;*/
     border-top: 0;
     border-bottom: 3px solid #0065fc;
   }
@@ -621,7 +617,6 @@ footer {
 
   #section-hebergements a {
     width: 100%;
-    /*La card prend 100% de la largeur*/
     padding: 0PX 20px;
   }
 
@@ -635,22 +630,18 @@ footer {
 
   .conteneur-card-hebergements {
     background-color: transparent;
-    /* background-color: #F2F2F2; */
-    /* border-radius: 20px; */
     margin: 0;
     flex: 66%;
-    /* margin-bottom: 1px; */
     height: 100%;
+    padding: 0;
   }
 
 
   #conteneur-hebergements img {
     max-height: 150px;
-    /*Pour que l'image ne soit pas trop grande*/
   }
 
   #afficher-plus {
-    /* margin: 10px 0px 78px 34px; */
     display: none;
   }
 
@@ -658,21 +649,18 @@ footer {
 
   /* activite a marseille */
 
-  /*  */
 
   #activities {
     width: 100%;
     background-color: #ffff;
-    /* padding: 23px; */
+    padding: 23px;
     flex-direction: column;
-    margin: 24px;
   }
 
   #activity-cards {
-    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
-    width: 107%;
+    width: 100%;
   }
 
   .tall_img {
@@ -683,7 +671,7 @@ footer {
   }
 
   .tall-card {
-    width: 88%;
+    width: 100%;
     height: 243px;
     margin-bottom: 20px;
   }
